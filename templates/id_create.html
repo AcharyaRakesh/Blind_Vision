@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='../static/css/obj_vqa.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.​0/css/font-awesome.min.css">
+  <title></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:italic|Droid+Serif:bold">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=3d-float">
+   <style>
+     span {
+       font-family: '3d-float', serif;
+       font-size: 50px;
+       text-shadow: 4px 4px 4px #ffffff;
+           }
+   </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="app-text">
+      <h3>
+        <span>I</span>
+        <span>.</span>
+        <span>D</span>
+        <span>.</span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span>C</span>
+        <span>R</span>
+        <span>E</span>
+        <span>A</span>
+        <span>T</span>
+        <span>E</span>
+        <span>R</span>
+  
+      </h3>
+    </div>
+    <div class="paragraph">
+      <p>The Smart I.D. Creater (using Artificile Intelligence) is atask
+        to create a Identity Card just by taking Name as a input. Here
+        it uses DEEPFACE model to predict their AGE and NATIONALITY as well as their GENDER
+      </p>
+    </div> 
+    <div class="app-picture">
+      <video id="myvid"  src="../static/videos/1057438282-preview.mp4" loop muted></video>
+    </div>
+    <div>
+      <ul>
+        <li><a class="btn" href="id_create_Machine"><button id="vidbutton" ></a></li>
+      </ul>
+    </div>
+  </div> 
+    <div class="field">
+      <img src='../static/images/logo2a.png' class="logo">
+    </div> 
+  </div> 
+  <div class='contents'> 
+    <ul>
+      <li class="prev" ><a href="homepage"><span></span></a></li>
+    </ul>
+  </div>
+</body>
+<script> 
+  var myVid=document.getElementById("myvid");
+  var icon= document.getElementById("vidbutton")
+
+  icon.onclick=function(){
+      if (myVid.paused){
+        myVid.play();
+        
+      }else{
+        myVid.pause();
+        
+      }
+  
+  }
+
+
+
+
+  </script>
+
+
+</html>

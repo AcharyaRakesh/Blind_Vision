@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='../static/css/obj_vqa.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.​0/css/font-awesome.min.css">
+  <title></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:italic|Droid+Serif:bold">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=3d-float">
+   <style>
+     span {
+       font-family: '3d-float', serif;
+       font-size: 50px;
+       text-shadow: 4px 4px 4px #ffffff;
+           }
+   </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="app-text">
+      <h3>
+        <span>O</span>
+        <span>b</span>
+        <span>j</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+        <span> </span>
+        <span>D</span>
+        <span>e</span>
+        <span>t</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>N</span>
+      </h3>
+    </div>
+    <div class="paragraph">
+      <p>Object detection is a computer vision 
+        technique that allows us to identify and 
+        locate objects in an image or video. With 
+        this kind of identification and localization, 
+        object detection can be used to count objects in 
+        a scene and determine and track their precise locations,
+        all while accurately labeling them.</p>
+    </div> 
+    <div class="app-picture">
+      <video id="myvid"  src="../static/videos/1057876987-preview.mp4" loop muted></video>
+    </div>
+    <div>
+      <ul>
+        <li><a class="btn"href="object_Machine"><button id="vidbutton"></a></li>
+      </ul>
+    </div>
+  </div> 
+    <div class="field">
+      <img src='../static/images/logo2a.png' class="logo">
+    </div> 
+  </div>
+  <div class='content'>
+    <ul>
+      <li class="next"><a href="contact"><span></span></a></li>
+    </ul>
+  </div>
+  <div class='contents'> 
+    <ul>
+      <li class="prev" ><a href="homepage"><span></span></a></li>
+    </ul>
+  </div>
+
+
+
+  <script> 
+    var myVid=document.getElementById("myvid");
+    var icon= document.getElementById("vidbutton")
+
+    icon.onclick=function(){
+        if (myVid.paused){
+          myVid.play();
+            // icon.src="../media/pause.png";
+        }else{
+          myVid.pause();
+            // icon.src="../media/play.png";
+        }
+    
+    }
+
+
+
+
+    </script>
+</body>
+</html>
