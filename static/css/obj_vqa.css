@@ -1,0 +1,287 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family:  sans-serif;
+}
+*{
+    background:#01070a;
+}
+
+
+.btn{
+    top: 91px;
+    right: 234px;
+    position: absolute;
+    background:transparent;
+    border: none;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: all-scroll;
+   
+}
+.btn span{
+    display: block;
+    padding: 8px 22px;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+
+
+.app-text h3{
+    font-size: 20px;
+    font-style:oblique;
+    position: absolute;
+    color: #2bbcff;
+    font-family: sans-serif;
+    letter-spacing:normal;
+
+}
+
+
+.app-text h3 span{
+    opacity: 0;
+    display: inline-block;
+    animation:animate 1s linear forwards ;
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+
+
+
+}
+
+
+.paragraph p{
+    font-size: 15px;
+    width: 400px;
+    margin: 90px 0 -200px 50px;
+    transform: translateY(10%);
+    transform: translateX(-10%);
+    line-height: 15px;
+    color: #f89544;
+
+}
+
+
+
+
+
+
+.app-picture{
+    width: 50%;
+    float: right;
+    transform: translateX(10%);
+}
+.app-picture video{
+    width: 80%;
+   
+}
+
+
+.app-text h3 span:nth-child(1){
+    animation-delay: 0s;
+}
+.app-text h3 span:nth-child(2){
+    animation-delay: 0.5s;
+}
+.app-text h3 span:nth-child(3){
+    animation-delay: 0.6s;
+}
+.app-text h3 span:nth-child(4){
+    animation-delay: 1s;
+}
+.app-text h3 span:nth-child(5){
+    animation-delay: 1.5s;
+}
+.app-text h3 span:nth-child(6){
+    animation-delay: 2s;
+}
+.app-text h3 span:nth-child(7){
+    animation-delay: 2.5s;
+}
+.app-text h3 span:nth-child(8){
+    animation-delay: 3s;
+}
+.app-text h3 span:nth-child(9){
+    animation-delay: 3.5s;
+}
+.app-text h3 span:nth-child(10){
+    animation-delay: 4s;
+}
+.app-text h3 span:nth-child(11){
+    animation-delay: 4.5s;
+}
+.app-text h3 span:nth-child(12){
+    animation-delay: 5s;
+}
+.app-text h3 span:nth-child(13){
+    animation-delay: 5.5s;
+}
+.app-text h3 span:nth-child(14){
+    animation-delay: 6s;
+}
+.app-text h3 span:nth-child(15){
+    animation-delay: 6.5s;
+}
+
+
+
+
+.logo{
+    position: relative;
+    width: 180px;
+    cursor: pointer;
+}
+
+.content ul
+{
+    position:absolute;
+    top:90%;
+    left:88%;
+    transform: translate(50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.content ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #262626;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: .5s;
+
+}
+.content ul li:hover{
+    background: #0070ff;
+}
+
+.content ul li span{
+   position: absolute;
+   width: 20px;
+   height:20px;
+   background: transparent;
+   border:4px solid #fff;
+   transition: .5s;
+
+}
+.content ul li.next span{
+    top:50%;
+    right: 20%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+}
+
+.content ul li.next:hover span{
+    right: 16%;
+}
+
+.content ul li.next span:before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    transform-origin: right;
+    transform: rotate(45deg) translate(6px,18px) scaleX(0);
+    transition: .5s;
+}
+.content ul li.next:hover span:before
+{
+    transform: rotate(45deg) translate(6px,18px) scaleX(1);  
+}
+
+
+
+.contents ul
+{
+    position:absolute;
+    top:90%;
+    left:5%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.contents ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #262626;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: .5s;
+
+}
+.contents ul li:hover{
+    background: #0070ff;
+}
+
+.contents ul li span{
+   position: absolute;
+   width: 20px;
+   height:20px;
+   background: transparent;
+   border:4px solid #fff;
+   transition: .5s;
+
+}
+.contents ul li.prev span{
+    top:50%;
+    left: 20%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-right: none;
+    border-bottom: none;
+}
+
+.contents ul li.prev:hover span{
+    left: 16%;
+}
+
+.contents ul li.prev span:before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    transform-origin: left;
+    transform: rotate(45deg) translate(-2px,-1px) scaleX(0);
+    transition: .5s;
+}
+.contents ul li.prev:hover span:before
+{
+    transform: rotate(45deg) translate(-2px,-1px) scaleX(1);  
+}
