@@ -20,6 +20,8 @@ If you are on Windows, Then download ffmpeg package for windows and then extract
 
 Now the installation if done.
 
+Donload yolv3 weights from https://pjreddie.com/darknet/yolo/
+
 How to run the project
 Go to the project directory and make sure conda environment is active. If not then you can activate by running below command
 
